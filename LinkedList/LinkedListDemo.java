@@ -96,5 +96,40 @@ public class LinkedListDemo {
         System.out.println(linkedList.peekLast()); // CALIFORNIA
 
     }
-    
+
+    /**
+     * get(int index) ==> This method returns the element at the specified position in this list.
+     *
+     * getFirst() : This method returns the first element in this list.
+     *
+     * getLast() : This method returns the last element in this list.
+     *
+     */
+
+    public void linkedListDemoExample3() {
+
+        LinkedList<String> linkedList = new LinkedList<String>();
+
+        linkedList.add("TEXAS");
+
+        linkedList.add("FLORIDA");
+
+        linkedList.add("IOWA");
+
+        linkedList.addFirst("NEW YORK");
+
+        linkedList.addLast("CALIFORNIA");
+
+        linkedList.add(3, "ILLINOIS");
+
+        System.out.println(linkedList); // [NEW YORK, TEXAS, FLORIDA, ILLINOIS, IOWA,  CALIFORNIA]
+
+        System.out.println(linkedList.get(2)); // FLORIDA
+
+        System.out.println(linkedList.getFirst()); // NEW YORK
+
+        System.out.println(linkedList.getLast()); // CALIFORNIA
+
+    }
+
 }
