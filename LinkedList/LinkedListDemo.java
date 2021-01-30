@@ -132,4 +132,31 @@ public class LinkedListDemo {
 
     }
 
+    /**
+     * toArray() ==> it returns al the elements in an array containing all the elements.
+     */
+    public void linkedListDemoExample3() {
+
+        LinkedList<String> linkedList = new LinkedList<String>();
+
+        linkedList.add("TEXAS");
+
+        linkedList.add("FLORIDA");
+
+        linkedList.add("IOWA");
+
+        linkedList.addFirst("NEW YORK");
+
+        linkedList.addLast("CALIFORNIA");
+
+        linkedList.add(3, "ILLINOIS");
+
+        System.out.println(linkedList); // [NEW YORK, TEXAS, FLORIDA, ILLINOIS, IOWA,  CALIFORNIA]
+
+        Object[] linkedListArray = list.toArray();
+        System.out.println("Array Linked List: "
+                + Arrays.toString(linkedListArray)); // [NEW YORK, TEXAS, FLORIDA, ILLINOIS, IOWA,  CALIFORNIA]
+
+    }
+
 }
