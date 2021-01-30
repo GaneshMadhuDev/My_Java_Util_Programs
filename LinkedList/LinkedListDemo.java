@@ -62,5 +62,39 @@ public class LinkedListDemo {
 
     }
 
+    /**
+     * peek() ==> This method retrieves, but does not remove, the head (first element) of this list.
+     *
+     * peekFirst() ==> This method retrieves, but does not remove, the first element of this list, or returns null if this list is empty.
+     *
+     * peekLast() ==> This method retrieves, but does not remove, the last element of this list, or returns null if this list is empty.
+     *
+     */
 
+    public void linkedListDemoExample2() {
+
+        LinkedList<String> linkedList = new LinkedList<String>();
+
+        linkedList.add("TEXAS");
+
+        linkedList.add("FLORIDA");
+
+        linkedList.add("IOWA");
+
+        linkedList.addFirst("NEW YORK");
+
+        linkedList.addLast("CALIFORNIA");
+
+        linkedList.add(3, "ILLINOIS");
+
+        System.out.println(linkedList); // [NEW YORK, TEXAS, FLORIDA, ILLINOIS, IOWA,  CALIFORNIA]
+
+        System.out.println(linkedList.peek()); // NEW YORK
+
+        System.out.println(linkedList.peekFirst()); // NEW YORK
+
+        System.out.println(linkedList.peekLast()); // CALIFORNIA
+
+    }
+    
 }
