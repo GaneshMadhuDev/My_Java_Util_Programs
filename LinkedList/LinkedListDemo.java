@@ -14,7 +14,7 @@ import java.util.LinkedList;
  */
 public class LinkedListDemo {
 
-    public void linkedListDemoExample() {
+    public void linkedListDemoExample1() {
 
         LinkedList<String> linkedList = new LinkedList<String>();
 
@@ -31,6 +31,34 @@ public class LinkedListDemo {
         linkedList.add(3, "ILLINOIS");
 
         System.out.println(linkedList);
+
+    }
+
+    /**
+     * To change the Existing elements we use set in LL.
+     */
+
+    public void linkedListDemoExample2() {
+
+        LinkedList<String> linkedList = new LinkedList<String>();
+
+        linkedList.add("TEXAS");
+
+        linkedList.add("FLORIDA");
+
+        linkedList.add("IOWA");
+
+        linkedList.addFirst("NEW YORK");
+
+        linkedList.addLast("CALIFORNIA");
+
+        linkedList.add(3, "ILLINOIS");
+
+        System.out.println(linkedList); // [NEW YORK, TEXAS, FLORIDA, ILLINOIS, IOWA,  CALIFORNIA]
+
+        linkedList.set(2, "OHIO");
+
+        System.out.println(linkedList); // [NEW YORK, TEXAS, OHIO, ILLINOIS, IOWA,  CALIFORNIA]
 
     }
 
