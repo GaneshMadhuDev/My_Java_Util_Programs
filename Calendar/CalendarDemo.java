@@ -4,6 +4,8 @@ package com.jwetherell.algorithms.MyGit.Date;
  * Created by ganeshmadhu on 1/30/21.
  */
 
+import java.util.Calendar;
+
 /**
  * set of calendar fields such as MONTH, YEAR, HOUR, etc.
  *
@@ -27,5 +29,35 @@ package com.jwetherell.algorithms.MyGit.Date;
  */
 public class CalendarDemo {
 
+
+    public void calendarDemoExample() {
+
+        Calendar calendar = Calendar.getInstance();
+
+        System.out.println("CalendarDemo.calendarDemoExample");
+
+        System.out.println("Year : " + calendar.get(Calendar.YEAR)
+                + " Month : " + calendar.get(Calendar.MONTH)
+                + " Day : " + calendar.get(Calendar.DATE)
+                + "Minute : " + calendar.get(Calendar.MINUTE)
+                + "Seconds : " + calendar.get(Calendar.SECOND));
+
+        int Max_Days_In_Week = calendar.getMaximum(Calendar.DAY_OF_WEEK);
+
+        System.out.println("Max Days In a week :" + Max_Days_In_Week);
+
+        int Max_Weeks_in_Year = calendar.getMaximum(Calendar.WEEK_OF_YEAR);
+
+        System.out.println("Max Weeks In a week :" + Max_Weeks_in_Year);
+
+        int Min_Days_In_Week = calendar.getMinimum(Calendar.DAY_OF_WEEK);
+
+        System.out.println("Minimum Days In a week :" + Min_Days_In_Week);
+
+        int Min_Weeks_in_Year = calendar.getMinimum(Calendar.WEEK_OF_YEAR);
+
+        System.out.println("Minimum Weeks In a week :" + Min_Weeks_in_Year);
+
+    }
 
 }
