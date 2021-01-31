@@ -29,25 +29,25 @@ public class LinkedHashMapDemo {
         linkedHashMap.put("student3", "John");
 
         // It prints the elements in same order as they were inserted
-        System.out.println(linkedHashMap);
+        System.out.println(linkedHashMap); // { student1 : Patrick, student2 :Jim , student3 : John}
 
-        System.out.println("name of student1 : " + linkedHashMap.get("student1"));
+        System.out.println("name of student1 : " + linkedHashMap.get("student1")); //Patrick
 
-        System.out.println("name of student2 : " + linkedHashMap.get("student2"));
+        System.out.println("name of student2 : " + linkedHashMap.get("student2")); // Jim
 
-        System.out.println("name of student3 : " + linkedHashMap.get("student3"));
+        System.out.println("name of student3 : " + linkedHashMap.get("student3")); // John
 
-        System.out.println("size of map : " + linkedHashMap.size());
+        System.out.println("size of map : " + linkedHashMap.size()); // 3
 
-        System.out.println("Is map empty? " + linkedHashMap.isEmpty());
+        System.out.println("Is map empty? " + linkedHashMap.isEmpty()); // false
 
-        System.out.println("is Map contains student4? " + linkedHashMap.containsKey("student4"));
+        System.out.println("is Map contains student4? " + linkedHashMap.containsKey("student4")); // false
 
 
-        System.out.println("delete element 'student1': " + linkedHashMap.remove("student1"));
+        System.out.println("delete element 'student1': " + linkedHashMap.remove("student1"));  // Patrick
 
         // print mappings to the console
-        System.out.println("students  of LinkedHashMap : " + linkedHashMap);
+        System.out.println("students  of LinkedHashMap : " + linkedHashMap); // { student2 :Jim , student3 : John}
 
     }
 
