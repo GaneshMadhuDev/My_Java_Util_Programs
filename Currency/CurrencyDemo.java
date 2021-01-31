@@ -15,6 +15,20 @@
  * */
 public class CurrencyDemo {
 
+    public void currencyDemoExample() {
 
+        Currency currency = Currency.getInstance("USD");
+
+        String currencyCode = currency.getCurrencyCode();
+
+        int defaultFractionDigits = currency.getDefaultFractionDigits();
+
+        System.out.println("USD Display Name : " + currency.getDisplayName());
+
+        System.out.println("CurrencyCode : " + currencyCode);
+
+        System.out.println("DefaultFractionDigits : " + defaultFractionDigits);
+
+    }
 
 }
