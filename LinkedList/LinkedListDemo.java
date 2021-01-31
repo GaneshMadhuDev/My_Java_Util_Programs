@@ -71,7 +71,7 @@ public class LinkedListDemo {
      *
      */
 
-    public void linkedListDemoExample2() {
+    public void linkedListDemoExample3() {
 
         LinkedList<String> linkedList = new LinkedList<String>();
 
@@ -106,7 +106,7 @@ public class LinkedListDemo {
      *
      */
 
-    public void linkedListDemoExample3() {
+    public void linkedListDemoExample4() {
 
         LinkedList<String> linkedList = new LinkedList<String>();
 
@@ -135,7 +135,7 @@ public class LinkedListDemo {
     /**
      * toArray() ==> it returns al the elements in an array containing all the elements.
      */
-    public void linkedListDemoExample3() {
+    public void linkedListDemoExample5() {
 
         LinkedList<String> linkedList = new LinkedList<String>();
 
